@@ -1,0 +1,26 @@
+package demo01;
+
+import java.util.Scanner;
+
+public class number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       try {
+		  int[] Arr = new int[5];
+		  System.out.println("请输入数组：");
+          Scanner sc = new Scanner(System.in);
+          for (int i = 0; i < Arr.length; i++) {
+              Arr[i] = sc.nextInt();      
+       }
+          System.out.println(Arr[6]);
+       }
+        catch(ArrayIndexOutOfBoundsException e) {
+        	System.out.println("数组越界了");
+        }
+       finally {
+    	   System.out.println("这里是必须执行的代码");
+       }
+	}
+}
+
